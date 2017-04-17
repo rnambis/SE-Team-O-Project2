@@ -3,6 +3,8 @@ import urllib2
 import json
 import re,datetime
 import sys
+import pandas as pd
+import json
  
 class L():
   "Anonymous container"
@@ -26,10 +28,15 @@ def secs(d0):
   return delta.total_seconds()
  
 def dump1(u,issues):
-  token = "f8faf2b87e761ed90a574d7db6810a8f34846bcc" # <===
+  token = "f3c77463acafb95306bc93aa012cddb67ecc0a42" # <===
   request = urllib2.Request(u, headers={"Authorization" : "token "+token})
   v = urllib2.urlopen(request).read()
   w = json.loads(v)
+
+  with open('teamo.json', 'w') as outfile:
+    json.dump(w, outfile)
+  
+  
   if not w: return False
   for event in w:
     issue_id = event['issue']['number']
@@ -37,11 +44,29 @@ def dump1(u,issues):
     action = event['event']
     user = event['actor']['login']
     milestone = event['issue']['milestone']
+
+    labels = event['issue']['labels']
+    comments = event['issue']['comments']
+    asignee = event['issue']['assignee']
+    asignees = event['issue']['assignees']
+    closed_at = secs(event['issue']['closed_at'])
+    body = event['issue']['body']
+    title = event['issue']['title']
+
     if milestone != None : milestone = milestone['title']
+
     eventObj = L(when=created_at,
                  action = action,
                  user = user,
-                 milestone = milestone)
+                 milestone = milestone,
+                 labels=labels,
+                 comments=comments,
+                 asignee = asignee,
+                 asignees = asignees,
+                 closed_at = closed_at,
+                 body=body,
+                 title=title
+                 )
     all_events = issues.get(issue_id)
     if not all_events: all_events = []
     all_events.append(eventObj)
@@ -55,7 +80,7 @@ def launchDump():
   page = 1
   issues = dict()
   while(True):
-    doNext = dump('https://api.github.com/repos/opensciences/opensciences.github.io/issues/events?page=' + str(page), issues)
+    doNext = dump('https://api.github.com/repos/rnambis/SE17-group-O/issues/events?page=' + str(page), issues)
     print("page "+ str(page))
     page += 1
     if not doNext : break
