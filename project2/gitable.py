@@ -28,7 +28,7 @@ def secs(d0):
   return delta.total_seconds()
  
 def dump1(u,issues):
-  token = "ec321fc23497701fd1aeb1cd59e3ca6f52bf5a1c" # <===
+  token = "79fc2951044acd2e4a3b6805ae329bc7f5c739ce" # <===
   request = urllib2.Request(u, headers={"Authorization" : "token "+token})
   v = urllib2.urlopen(request).read()
   w = json.loads(v)
@@ -55,7 +55,12 @@ def dump1(u,issues):
 
     
     comments = event['issue']['comments']
-    #assignee = event['issue']['assignee']['login']
+    #print(event[])
+    if event['issue']['assignee'] is not None:
+      assignee = event['issue']['assignee']['login']
+    else:
+      assignee=[]
+    
     assignees_name=[]
     
     assignees = event['issue']['assignees']
@@ -72,7 +77,7 @@ def dump1(u,issues):
                  user = user,
                  milestone = milestone,
                  comments=comments,
-                 #assignee = assignee,
+                 assignee = assignee,
                  assignees_name = assignees_name,
                  closed_at = closed_at,
                  labels_name = labels_name,
