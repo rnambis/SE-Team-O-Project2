@@ -35,7 +35,6 @@ def dump1(u,issues):
     issue_id = event['issue']['number']
     created_at = secs(event['created_at'])
     action = event['event']
-    label_name = event['label']['name']
     user = event['actor']['login']
     milestone = event['issue']['milestone']
     if milestone != None : milestone = milestone['title']
@@ -50,12 +49,7 @@ def dump1(u,issues):
   return True
 
 def dump(u,issues):
-  try:
-    return dump1(u, issues)
-  except Exception as e: 
-    print(e)
-    print("Contact TA")
-    return False
+  return dump1(u, issues)
 
 def launchDump():
   page = 1
