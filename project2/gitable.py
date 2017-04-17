@@ -28,7 +28,7 @@ def secs(d0):
   return delta.total_seconds()
  
 def dump1(u,issues):
-  token = "f3c77463acafb95306bc93aa012cddb67ecc0a42" # <===
+  token = "b82019563437db2a9dbe68b04cab00348f29ae1a" # <===
   request = urllib2.Request(u, headers={"Authorization" : "token "+token})
   v = urllib2.urlopen(request).read()
   w = json.loads(v)
@@ -45,12 +45,24 @@ def dump1(u,issues):
     user = event['actor']['login']
     milestone = event['issue']['milestone']
 
-    labels = event['issue']['labels']
+    labels= event['issue']['labels']
+    labels_name=[]
+    labels_color=[]
+    for label in labels_name:
+      labels_name.append(label['name'])
+      labels_color.append(label['color'])
+
+
+    
     comments = event['issue']['comments']
-    asignee = event['issue']['assignee']
-    asignees = event['issue']['assignees']
+    #assignee = event['issue']['assignee']['login']
+    assignees_name=[]
+    
+    assignees = event['issue']['assignees']
+    for each in assignees:
+      assignees_name.append(each['login'])
     closed_at = secs(event['issue']['closed_at'])
-    body = event['issue']['body']
+    #body = event['issue']['body']
     title = event['issue']['title']
 
     if milestone != None : milestone = milestone['title']
@@ -61,10 +73,13 @@ def dump1(u,issues):
                  milestone = milestone,
                  labels=labels,
                  comments=comments,
-                 asignee = asignee,
-                 asignees = asignees,
+                 #assignee = assignee,
+                 assignees_name = assignees_name,
                  closed_at = closed_at,
-                 body=body,
+                 labels_name = labels_name,
+                 labels_color = labels_color,
+
+                 #body=body,
                  title=title
                  )
     all_events = issues.get(issue_id)
