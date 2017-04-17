@@ -33,7 +33,6 @@ def dump1(u,issues):
   if not w: return False
   for event in w:
     issue_id = event['issue']['number']
-    if not event.get('label'): continue
     created_at = secs(event['created_at'])
     action = event['event']
     label_name = event['label']['name']
@@ -42,7 +41,6 @@ def dump1(u,issues):
     if milestone != None : milestone = milestone['title']
     eventObj = L(when=created_at,
                  action = action,
-                 what = label_name,
                  user = user,
                  milestone = milestone)
     all_events = issues.get(issue_id)
