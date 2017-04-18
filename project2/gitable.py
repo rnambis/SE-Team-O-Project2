@@ -5,7 +5,10 @@ import re,datetime
 import sys
 import pandas as pd
 import json
- 
+
+df=pd.DataFrame()
+rowsList=[]
+
 class L():
   "Anonymous container"
   def __init__(i,**fields) : 
@@ -28,13 +31,14 @@ def secs(d0):
   return delta.total_seconds()
  
 def dump1(u,issues):
-  token = "79fc2951044acd2e4a3b6805ae329bc7f5c739ce" # <===
+  token = "c7082d763a9dc1236aba83340f76dd3cc390c427" # <===
   request = urllib2.Request(u, headers={"Authorization" : "token "+token})
   v = urllib2.urlopen(request).read()
   w = json.loads(v)
 
-  with open('teamo.json', 'w') as outfile:
-    json.dump(w, outfile)
+  d={}
+  # with open('teamo.json', 'w') as outfile:
+  #   json.dumps(w, outfile)
   
   
   if not w: return False
@@ -86,6 +90,22 @@ def dump1(u,issues):
                  #body=body,
                  title=title
                  )
+  
+
+    d['when']=created_at
+    d['action']=action
+    d['user']=user
+    d['milestone']=milestone
+    d['comments']=comments
+    d['assignee']=assignee
+    d['assignees_name']=assignees_name
+    d['closed_at']=closed_at
+    d['labels_name']=labels_name
+    d['labels_color']=labels_color
+    d['title']=title
+
+    rowsList.append(d)
+
     all_events = issues.get(issue_id)
     if not all_events: all_events = []
     all_events.append(eventObj)
@@ -103,9 +123,19 @@ def launchDump():
     print("page "+ str(page))
     page += 1
     if not doNext : break
-  for issue, events in issues.iteritems():
-    print("ISSUE " + str(issue))
-    for event in events: print(event.show())
-    print('')
+  # for issue, events in issues.iteritems():
+  #   print("ISSUE " + str(issue))
+  #   for event in events: print(event.show())
+  #   print('')
+
+
+
+
+ 
+  # with open('result.json', 'w') as fp:
+  #   json.dump(issues, fp)
     
 launchDump()
+df=pd.DataFrame(rowsList)
+df.to_csv('data.csv',sep=',')
+print(rowsList)
