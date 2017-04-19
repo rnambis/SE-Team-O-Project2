@@ -7,8 +7,8 @@ import pandas as pd
 import json
 
 df=pd.DataFrame()
-rowsList=[]
-
+rowsList = []
+final = dict()
 class L():
   "Anonymous container"
   def __init__(i,**fields) : 
@@ -31,7 +31,7 @@ def secs(d0):
   return delta.total_seconds()
  
 def dump1(u,issues):
-  token = "c7082d763a9dc1236aba83340f76dd3cc390c427" # <===
+  token = "cd9563f2db1b9ec7a711f50769736b31a8ed6e87" # <===
   request = urllib2.Request(u, headers={"Authorization" : "token "+token})
   v = urllib2.urlopen(request).read()
   w = json.loads(v)
@@ -42,7 +42,12 @@ def dump1(u,issues):
   
   
   if not w: return False
+
+  k=0
   for event in w:
+    k +=1
+    print(k)
+
     issue_id = event['issue']['number']
     created_at = secs(event['created_at'])
     action = event['event']
@@ -73,6 +78,7 @@ def dump1(u,issues):
     closed_at = secs(event['issue']['closed_at'])
     #body = event['issue']['body']
     title = event['issue']['title']
+    
 
     if milestone != None : milestone = milestone['title']
 
@@ -104,11 +110,16 @@ def dump1(u,issues):
     d['labels_color']=labels_color
     d['title']=title
 
-    rowsList.append(d)
+    #print(d['title'])
 
     all_events = issues.get(issue_id)
-    if not all_events: all_events = []
+    if not all_events: 
+      all_events = []
+      
     all_events.append(eventObj)
+    rowsList.append(d)
+    d={}
+    final[issue_id]=rowsList
     issues[issue_id] = all_events
   return True
 
@@ -123,10 +134,16 @@ def launchDump():
     print("page "+ str(page))
     page += 1
     if not doNext : break
+
+  count = 0
   # for issue, events in issues.iteritems():
   #   print("ISSUE " + str(issue))
-  #   for event in events: print(event.show())
+  #   for event in events: 
+  #     print(event.show())
+  #     count +=1
   #   print('')
+
+  #print(count)
 
 
 
@@ -136,6 +153,12 @@ def launchDump():
   #   json.dump(issues, fp)
     
 launchDump()
+print(type(rowsList))
+
+for each in rowsList:
+  print(each['title'])
+  print("\n")
+
 df=pd.DataFrame(rowsList)
 df.to_csv('data.csv',sep=',')
-print(rowsList)
+
