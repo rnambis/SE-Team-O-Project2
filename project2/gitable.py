@@ -31,7 +31,7 @@ def secs(d0):
   return delta.total_seconds()
  
 def dump1(u,issues):
-  token = "cd9563f2db1b9ec7a711f50769736b31a8ed6e87" # <===
+  token = "ad4686af68d7cf97680d0f402f3e6bdb44716dba" # <===
   request = urllib2.Request(u, headers={"Authorization" : "token "+token})
   v = urllib2.urlopen(request).read()
   w = json.loads(v)
@@ -57,7 +57,7 @@ def dump1(u,issues):
     labels= event['issue']['labels']
     labels_name=[]
     labels_color=[]
-    for label in labels_name:
+    for label in labels:
       labels_name.append(label['name'])
       labels_color.append(label['color'])
 
@@ -130,7 +130,7 @@ def launchDump():
   page = 1
   issues = dict()
   while(True):
-    doNext = dump('https://api.github.com/repos/rnambis/SE17-group-O/issues/events?page=' + str(page), issues)
+    doNext = dump('https://api.github.com/repos/SE17GroupH/Zap/issues/events?page=' + str(page), issues)
     print("page "+ str(page))
     page += 1
     if not doNext : break
@@ -160,5 +160,5 @@ for each in rowsList:
   print("\n")
 
 df=pd.DataFrame(rowsList)
-df.to_csv('data.csv',sep=',')
+df.to_csv('teamh.csv',sep=',')
 
