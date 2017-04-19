@@ -31,7 +31,7 @@ def secs(d0):
   return delta.total_seconds()
  
 def dump1(u,issues):
-  token = "ad4686af68d7cf97680d0f402f3e6bdb44716dba" # <===
+  token = "c8aed6875002a0de48a9f3420f7f868bde72efc7" # <===
   request = urllib2.Request(u, headers={"Authorization" : "token "+token})
   v = urllib2.urlopen(request).read()
   w = json.loads(v)
@@ -49,11 +49,12 @@ def dump1(u,issues):
     print(k)
 
     issue_id = event['issue']['number']
-    created_at = secs(event['created_at'])
+    event_created_at = secs(event['created_at'])
     action = event['event']
     user = event['actor']['login']
     milestone = event['issue']['milestone']
-
+    issue_created_at = secs(event["issue"]["created_at"])
+    issue_closed_at = secs(event["issue"]["closed_at"])
     labels= event['issue']['labels']
     labels_name=[]
     labels_color=[]
@@ -75,40 +76,62 @@ def dump1(u,issues):
     assignees = event['issue']['assignees']
     for each in assignees:
       assignees_name.append(each['login'])
-    closed_at = secs(event['issue']['closed_at'])
     #body = event['issue']['body']
     title = event['issue']['title']
     
+    milestone_created_at = 'None'
+    milestone_due_on = 'None'
+    milestone_closed_at = 'None'
+    if milestone != None :
+      milestone = milestone['title']
+      milestone_created_at = secs(event["issue"]["milestone"]["created_at"])
+      milestone_closed_at = event["issue"]["milestone"]["closed_at"]
+      if not milestone_closed_at:
+        milestone_closed_at = 'None'
+      else:
+        milestone_closed_at = secs(event["issue"]["milestone"]["closed_at"])
+      milestone_due_on = secs(event["issue"]["milestone"]["due_on"])
+    else:
+     milestone = 'None'
 
-    if milestone != None : milestone = milestone['title']
 
-    eventObj = L(when=created_at,
+
+    eventObj = L(event_created_at=event_created_at,
                  action = action,
                  user = user,
                  milestone = milestone,
                  comments=comments,
                  assignee = assignee,
                  assignees_name = assignees_name,
-                 closed_at = closed_at,
                  labels_name = labels_name,
                  labels_color = labels_color,
-
+                 issue_id = issue_id,
+                 issue_created_at= issue_created_at,
+                 issue_closed_at = issue_closed_at,
+                 milestone_due_on = milestone_due_on,
+                 milestone_closed_at = milestone_closed_at,
+                 milestone_created_at = milestone_created_at,
                  #body=body,
                  title=title
                  )
   
 
-    d['when']=created_at
+    d['event_created_at']=event_created_at
     d['action']=action
     d['user']=user
     d['milestone']=milestone
     d['comments']=comments
     d['assignee']=assignee
     d['assignees_name']=assignees_name
-    d['closed_at']=closed_at
     d['labels_name']=labels_name
     d['labels_color']=labels_color
     d['title']=title
+    d['issue_id']=issue_id
+    d['issue_created_at']= issue_created_at
+    d['issue_closed_at'] = issue_closed_at
+    d['milestone_created_at'] = milestone_created_at
+    d['milestone_closed_at'] = milestone_closed_at
+    d['milestone_due_on'] = milestone_due_on
 
     #print(d['title'])
 
@@ -130,7 +153,7 @@ def launchDump():
   page = 1
   issues = dict()
   while(True):
-    doNext = dump('https://api.github.com/repos/SE17GroupH/Zap/issues/events?page=' + str(page), issues)
+    doNext = dump('https://api.github.com/repos/genterist/whiteWolf/issues/events?page=' + str(page), issues)
     print("page "+ str(page))
     page += 1
     if not doNext : break
@@ -160,5 +183,5 @@ for each in rowsList:
   print("\n")
 
 df=pd.DataFrame(rowsList)
-df.to_csv('teamh.csv',sep=',')
+df.to_csv('teamp.csv',sep=',')
 
