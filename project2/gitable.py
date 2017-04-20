@@ -31,7 +31,7 @@ def secs(d0):
   return delta.total_seconds()
  
 def dump1(u,issues):
-  token = "c8aed6875002a0de48a9f3420f7f868bde72efc7" # <===
+  token = "1ab936389b12b353d760eadb2e757e205d1425c0" # <===
   request = urllib2.Request(u, headers={"Authorization" : "token "+token})
   v = urllib2.urlopen(request).read()
   w = json.loads(v)
@@ -82,6 +82,8 @@ def dump1(u,issues):
     milestone_created_at = 'None'
     milestone_due_on = 'None'
     milestone_closed_at = 'None'
+    mclose_created='None'
+    mdue_created='None'
     if milestone != None :
       milestone = milestone['title']
       milestone_created_at = secs(event["issue"]["milestone"]["created_at"])
@@ -90,7 +92,9 @@ def dump1(u,issues):
         milestone_closed_at = 'None'
       else:
         milestone_closed_at = secs(event["issue"]["milestone"]["closed_at"])
+        mclose_created = milestone_closed_at - milestone_created_at
       milestone_due_on = secs(event["issue"]["milestone"]["due_on"])
+      mdue_created= milestone_due_on - milestone_created_at
     else:
      milestone = 'None'
 
@@ -132,6 +136,8 @@ def dump1(u,issues):
     d['milestone_created_at'] = milestone_created_at
     d['milestone_closed_at'] = milestone_closed_at
     d['milestone_due_on'] = milestone_due_on
+    d['mclose_created']=mclose_created
+    d['mdue_created'] = mdue_created
 
     #print(d['title'])
 
@@ -153,7 +159,7 @@ def launchDump():
   page = 1
   issues = dict()
   while(True):
-    doNext = dump('https://api.github.com/repos/genterist/whiteWolf/issues/events?page=' + str(page), issues)
+    doNext = dump('https://api.github.com/repos/SE17GroupH/Zap/issues/events?page=' + str(page), issues)
     print("page "+ str(page))
     page += 1
     if not doNext : break
@@ -183,5 +189,5 @@ for each in rowsList:
   print("\n")
 
 df=pd.DataFrame(rowsList)
-df.to_csv('teamp.csv',sep=',')
+df.to_csv('teamh.csv',sep=',')
 
