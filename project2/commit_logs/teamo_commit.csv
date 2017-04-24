@@ -1,0 +1,143 @@
+,author,date,message,sha
+0,bhushan9,1492132002.0,csv file for issues,d8cccc444bd32a18f141f6933562018d94305233
+1,ZacheryThomas,1492055723.0,Update README.md,e9b5b0459ca7499eb89c7f4a75db36cb46cc29b1
+2,ZacheryThomas,1491617315.0,Updated Final Report,bf410c00ce5e4eb0653afffe13ec197967866637
+3,ZacheryThomas,1491588302.0,Add files via upload,1565fb9b90c8f4d087716093017aa751d6506619
+4,ZacheryThomas,1491326224.0,Added manual run for social,5e41e26a6452e9cc0a04d4b75b083584a8fdc1b6
+5,ZacheryThomas,1491167570.0,Added /email path,07cb38e1dd9dd4a9c5cb6524668b385b1b59da20
+6,ZacheryThomas,1491148576.0,Cleaned up imports,9c34cf7713ffb9f655f7b2bfb6881f2dd66001f9
+7,rnambis,1490998016.0,"edits done, final file",15c866a8d59856bd92ea3feb2fda54fcdb5de952
+8,rnambis,1490997676.0,Css edits done in email,7f883836527771a1c3585d9abd02ecf632619053
+9,rnambis,1490994220.0,"email done, css edits left",994cd70fa344980bff4a7f61ce583db9ff768516
+10,rnambis,1490993969.0,Email running,74397659b6f53129b0ea7554e6901ef77214d67d
+11,rnambis,1490984791.0,confirmation email is done,906c8cb9ecec1311dda7921fb6e7cce82cdec2dc
+12,ZacheryThomas,1490981433.0,Delete old content,7c9b183e7f32477abd0de5c77b041152513c274a
+13,ZacheryThomas,1490929339.0,Added better formating for html,839d3f1e9f06609a0cf2df6d359be4fd75ab00b8
+14,bhushan9,1490926230.0,Merge branch 'master' of https://github.com/rnambis/SE17-group-O,b3f81fe60c3417ed072967b67d6150c144050629
+15,bhushan9,1490926210.0,google analytics code added,4368bc2b6de6fb487bd41f5ec2aa87927cb5e67e
+16,Zachery Thomas,1490919570.0,Cleanup of temp files,ceec8626e2ae3cf08f6a7aeaa73c2c30890dca2f
+17,Zachery Thomas,1490919402.0,Readd python files. whoops,ea90fc4d15391f986a251cad04071f524f83b432
+18,Zachery Thomas,1490919059.0,fixed untracked files,31fba8b8ad4135b6cbdb6745ad46601bba972af8
+19,Zachery Thomas,1490907371.0,Update master requirments list,8ed9e50e13d971682ccd334fd851b6f156d29fa6
+20,Zachery Thomas,1490906872.0,update requirements,cb2a41896d11a9adbe99d12e79413588c043ca2d
+21,Zachery Thomas,1490906567.0,Fixed error in __init__,1f63cf6705ee94b9ecfe566f8171f8aee62e6a3f
+22,Zachery Thomas,1490906401.0,Modified db in init,e646555296b70466876054d25902562f8fc98ab3
+23,Zachery Thomas,1490902319.0,Added better formatting for base html,a5decb99b43f1e63e335dfe4ebdb425c9c4b8c8c
+24,Zachery Thomas,1490901191.0,Forward to news automatically. Auto fill news,52d1e5fc7fd4950502eb09bd8d4f4ebd7eb3f1d0
+25,Zachery Thomas,1490838628.0,Added remote db checking,8002e0a5f2427515f12a7863b05ac0c3ef82ccf0
+26,ZacheryThomas,1490820978.0,Deleting old References file,e9845ecefa4b06907edbf79949779e9b32c72ec1
+27,ZacheryThomas,1490820774.0,Delete old copy of project_idea.md,affc9d79000d2c99847123462ad6e9226db3a6aa
+28,Zachery Thomas,1490743567.0,Fixed spelling error,080e4ea52eb1f964dff5ab7f31f82e9f02e3041b
+29,Zachery Thomas,1490743436.0,Modified port and ip,75a1cb16044e6dd0b1453d9d380830e41b65c866
+30,bhushan9,1490743013.0,newsapi link added,0649990196a6bbeb397a2d8558c87da8268f1ffe
+31,Zachery Thomas,1490743011.0,Updated Requirements,5faa7594a6c3d2153d4e4f60e6951b8b338a32b9
+32,Zachery Thomas,1490742630.0,Removed old dependencies,3f80295772e4e70cd6d1e131c16c33c8e2250651
+33,bhushan9,1490742419.0,duplicate feedback link removed,57a352ddf6cbdf3272e8df81471ded4d0a850a91
+34,ZacheryThomas,1490742279.0,Merge branch 'bhushan' into master,4bc8de1dc2efeda720f669381d5fa9af851e5a9c
+35,bhushan9,1490741994.0,link opens in new tab,6786779a06b2e40284ce5cd4446f7495fdbff196
+36,Zachery Thomas,1490741728.0,Modified run,340546622153f823a7c6cffa049f08297c538622
+37,bhushan9,1490741653.0,link opens in new tab,9f71cbb7bd3df8ce0d64c8241cdffd61365f7a22
+38,bhushan9,1490741543.0,audio issue resolved,396187afed173700d2d4c6320dcee3c1229de36b
+39,Zachery Thomas,1490741263.0,Testing stuff out for a sec,cbe611914efd662a20154d3633a132c2890e409a
+40,Zachery Thomas,1490740808.0,Getting ready for depolyment?,4b0d19644a65cd1423b87dc9a79b5a43d2ef556c
+41,bhushan9,1490740443.0,got rid of admin dashboard,6bf2299a23b447de8db9a112d457d3d1bdaca3f6
+42,bhushan9,1490739924.0,better background color,29b8d6c20d852c1391c94ac8bf7ae1ab487cba37
+43,bhushan9,1490739659.0,color change,da0eb85545ad338044a1118ea4c6983d52ae2cea
+44,bhushan9,1490739393.0,Feedback link added,45a386fffe50a07aafd0b9cd769d83442ece89a8
+45,bhushan9,1490738162.0,login n color changed,1b9712aa51ed489db306b18d6779b715dbecea6f
+46,Zachery Thomas,1490737925.0,Added survey link to website,e8c6e0393756179596362e05662f840a32a5a4dd
+47,Zachery Thomas,1490727473.0,"JK, actually fixed spacing this time",3414718b49de63755e57f478d3162949332357f5
+48,Zachery Thomas,1490727305.0,Corrected spacing,ee3bfdc4d8d5fa7460a8feb05b267f6459efb11c
+49,Zachery Thomas,1490725687.0,Better formatting for social,de44064748c8fc8c6078bcf10f5bf1e930ccc1a6
+50,Zachery Thomas,1490724531.0,Corrected directory misspelling,2ddc7eb82414721403d4681968c959b89b71b5a6
+51,ZacheryThomas,1490724127.0,Create sample_template.html,451a6027a765875f260b76d74d95c92fde820d70
+52,ZacheryThomas,1490234823.0,Better formatting for README.md,93cbfb7e996698e80e43ee633e57c6f421364856
+53,Zachery Thomas,1490127199.0,Better formatting for multi tweet stories,403d016a325896ad0ddf3476ff7629d83a788cda
+54,Zachery Thomas,1490070921.0,Updated social_job with new API,b3bb860ef6621afcd7f1ac060dff7f49661373f0
+55,Zachery Thomas,1490068993.0,Added better handling of multi-tweet stories,f6fabb3991537c3775df11c27eed770a1b656009
+56,bhushan9,1489285838.0,link color red,a07f63d1deb912053dbdb3c1b6d626b9776ad879
+57,bhushan9,1489285250.0,removed unused files,9fb698ab4bad051bad453cd1258d245d7ef0b9ee
+58,bhushan9,1489284344.0,new s aapi,73034992f437dc5c0010e3f437be3d72f12ac140
+59,Zachery Thomas,1489262236.0,Added social job for twitter posts,f06196f9331a369db6034414561d1560315121be
+60,bhushan9,1489167646.0,twitter link added,6240573aec7ee9aefd3e3e0c9769743154d59fd9
+61,bhushan9,1489165646.0,check added news_job,9e882e54f41717fcc4f4baa22b1db01cec6bc2d6
+62,bhushan9,1489124531.0,audio button for each news,cb3daaa1c9bcc23b21c3e7d469ccf2d9977e339f
+63,bhushan9,1489121410.0,image resized,f5214e1b9a3a38b58e4da2a7c0f3cbf4f1077769
+64,bhushan9,1489120680.0,images added,2a66bbb9dfbb869cf05713029a3a513237960c22
+65,bhushan9,1489120480.0,added title,9746958822ec96ddf7a7c66854c28edd0e2d29a1
+66,bhushan9,1489119201.0,newsfeed size change,3bb88cae5aac1d1460a412f07e7b404bd16fa7ee
+67,bhushan9,1489118578.0,color change,1876bdf3b726539eda9b41b598a42df08bf2faa7
+68,bhushan9,1489116457.0,button color changed,a15b0a7238cbb8f959b7532b112a427a7581e756
+69,bhushan9,1489113789.0,better background image,4e7d1b50010e75c4e6078ffddade7b37548bebda
+70,bhushan9,1489112733.0,Dashboard color changed,1a8cc27839f44429589a1cd9a23e0ac9c49f9eb7
+71,bhushan9,1489110498.0,Newsfeed change,a80c37fae604798ad1f2c43f6f5c00576b6f7458
+72,bhushan9,1489030376.0,Dashboard added,982da5f0c7ae8432c885f5ef7af35de963d1eef2
+73,ZacheryThomas,1488514698.0,Update README.md,730ac79893d5e937e870862062fbaf13a3b49e81
+74,bhushan9,1488338037.0,commit issue,2ee5890cd448a942648bfb544c426352ce0a155c
+75,Zachery Thomas,1488310169.0,Readded Twitter support,b327cf6801688d64bdf3d5fbe48bd8921f16cc21
+76,ZacheryThomas,1488306379.0,Delete temp.md,f59f487df82b92482daec8a5851295a56348246f
+77,bhushan9,1488241154.0,Add files via upload,24ac8f8c158af661f0207397462996625fbaf9f2
+78,ZacheryThomas,1488240569.0,Update README.md to use md instead of html,9b8859be86488540fb8f55207f70bd3dc63c88e0
+79,ZacheryThomas,1488240399.0,Update README.md,6fb454467dbf2cdf3004fce9174725c7f7d6c92c
+80,Zachery Thomas,1488240119.0,Removes special characters before TTS,5c51ec3469bfc476c54f6665c70882374382db1e
+81,rnambis,1488236993.0,Create README.md,ff23f91d6879b479987a7763dc2a2af6f342a951
+82,ZacheryThomas,1488170260.0,Create Twitter.md,38730d86206410a3b883c395753a6281205b4974
+83,Zachery Thomas,1488141364.0,Slow down news updates. Now 10 min.,dbd287e1293e6dbcaf9b54cb68fc9956555d3569
+84,Zachery Thomas,1488137431.0,Added voice to speech button using JS,54fc03a977983aec779e9b8f0c6fd8f25b53fd27
+85,Zachery Thomas,1487979354.0,Add correct path for fourm submission in news.html,c8be86c666b823b7c21b99c5ee673b710dcdfd97
+86,ZacheryThomas,1487977791.0,Delete __init__.py~,7f1e5f07e264c7ca0e31800583e3cf70d95d3c57
+87,ZacheryThomas,1487977776.0,Delete views.pyc,8417b9c56cbb0bda5cfd12112c98aa28aac2e48b
+88,ZacheryThomas,1487977772.0,Delete models.pyc,4ee5e3a974172cae0196cc7078d289ea9b9645ad
+89,ZacheryThomas,1487977704.0,Delete __init__.pyc,7cfa71bfd754bd9e986b6a8530eceac72658e11e
+90,Zachery Thomas,1487977320.0,Added better error checking for news_job and unpickling for views,27939ff3546328b969751832660e025aabd02c89
+91,Zachery Thomas,1487888776.0,Remove old files that were moved to /News,6f24d49b1a05e3fc7ec9bf4b8da0bf509b6390da
+92,Zachery Thomas,1487888527.0,Added automatic news downloading job on startup,a125c406730f53e8660a908c073e40a37b50d869
+93,rnambis,1487887140.0,removed old folder,5185d66b97fbd143409193698ebaf8281ae8359a
+94,Zachery Thomas,1487885752.0,Added better error checking for views.py,03101119e1540cc4c550b81e9a3f0d6f226d6ae2
+95,Zachery Thomas,1487885268.0,Added ability for views.py to read from file,555e7fa5880523ff681e52dc86f724cb1a0b3c59
+96,Zachery Thomas,1487882841.0,Added sample news.data pickled file,3b0ab2b493a1e01da7382d72ce074243bb348d2b
+97,Zachery Thomas,1487871191.0,Updated formatting for data file,9cdf6de421ad98698ef6720ea36345348fb612a2
+98,Zachery Thomas,1487868946.0,Changed news_job.py to background task,2366de6fe2be9487b401aa2ef24b340ece49e237
+99,bhushan,1487867017.0,Fixed css for newsfeed,f431f23bbdbb73e8942546c65cc0a66bdf600d95
+100,ZacheryThomas,1487866692.0,Fixed missing colon in news_job.py,21e29eef75c2f6234149b4930569bf5fbfbc0ee1
+101,Zachery Thomas,1487821929.0,Added job scheduler that saves news to pickle object,8a6995c5cbeae1606b1a5e3bd6a586e2d213c796
+102,ZacheryThomas,1487799851.0,Spelling Correction in,27b086563e82dd7a86e1603cd32fdd7aa5975dfb
+103,rnambis,1487718627.0,Create Readme,53a2dd2a99b59cb52d097733c7df9ce520d8b236
+104,rnambis,1487709922.0,Integrated newspaper code to login code,01b674b340c800dfaeea42a79310936b653a6926
+105,Zachery Thomas,1487708330.0,Added ability to view txt file from site,a7e797445123f770d68a5c6ba0ef5e60f7483da8
+106,Zachery Thomas,1487707965.0,Added better error checking for newspaper module,f5238ed52b6922dd49bb31ab419fff8201733011
+107,rnambis,1487705735.0,Merge conflicts resolved,154fbd199d083ddbf44819911598e7471faedb23
+108,rnambis,1487705354.0,login done,61d139ce1c6daff7af4c72f52d2800a4396562f6
+109,Zachery Thomas,1487702987.0,Added better text splitting for big twitter posts,dbb0d9673343e5bcc187e5b955e36fa23440877e
+110,bhushan,1487659134.0,Fetching data script,5d2fd7730746bd2fedda52aab176cbf25b7dbfdc
+111,rnambis,1487479259.0,Dashboard reached,84a83f6b69e707ce135109967ed5cb8d5beed207
+112,rnambis,1487478944.0,Login and registeration done,98304f172dda8dd4b4ce19942565b8873623d642
+113,rnambis,1487478056.0,Home page done,59a091f50d9c2b21bd673469206ecc0608503a9c
+114,rnambis,1487477523.0,"blueprint definitions of home,auth, admin over",5de232a50f7b50c2c6929a87d275bf69e0b2d300
+115,rnambis,1487477306.0,Before home blueprint,a2e12b071a9c09f40e514a31a798b75a4e88087d
+116,ZacheryThomas,1487440203.0,"Create example.json
+
+Use as reference for format of news objects",ddd58c96c74e42c47f9d5dd8dc9b4ef1f9a8fdab
+117,bhushan,1487436702.0,Added weblinks and newsfeed window,3e3001aa81bbeead84ffb995c1a9873239ece423
+118,Zachery Thomas,1487367432.0,"Added automatic parsing of news
+
+Retrives news at 1 minute intervals. Posts summary to twitter.",b82c2f2264ecb563f7ff4812b90870d0a72534d0
+119,bhushan,1487310316.0,Bootstrap added,0717e56a37ca4b491095519449b14a11faa3b41f
+120,Zachery Thomas,1487282653.0,Made twitter file a class for later use.,c13b464093a91686a3d24e50cd84a124450e6735
+121,ZacheryThomas,1487259087.0,Update README.md,e0fc6b187e5e87bbe3ee926cf9af74e4c2a4aacc
+122,Zachery Thomas,1487110380.0,Added additional button for testing,296579f524e6b28003d92973070a1558c01a946c
+123,bhushan,1486936068.0,initial framework for newspaper,df7103d009711377e90ad5585e37784d3294bea7
+124,Zachery Thomas,1486928741.0,Added initial python framework for publishing messages,5af5f6436da8e46b3b4661ed5be4c1e03fa5b716
+125,rnambis,1486503728.0,Working on sign up sheet of Web App,e356f83cec8e1c2b0d0aa47ddbe8b7466f81da66
+126,ZacheryThomas,1485921348.0,Add files via upload,cae752cf44100baed4255eb99b4f27ab955d8656
+127,ZacheryThomas,1485918922.0,Add files via upload,9b745dd5556b3e653892a3c84895e64ef5712a31
+128,ZacheryThomas,1485913740.0,Add files via upload,3db2d1f848f1c12efd3b3f24fa2950e1927679bb
+129,ZacheryThomas,1485913706.0,Create temp.md,f8e20e7b9da3bf8d865093e6d080854468b8d25c
+130,ZacheryThomas,1485018775.0,Update Reference papers for personalized news feed,f0b0b795dc6286c57d97d89aa3b4292366af985c
+131,bhushan9,1484771073.0,Update project_idea.md,3b99bc95620285c61a7217d8237fdc81bb312af9
+132,bhushan9,1484765647.0,Update Reference papers for personalized news feed,765b3628340cdf80788099c2ece470ed55adba5e
+133,ZacheryThomas,1484765628.0,Create project_idea.md,bb82990c7b3514cd56eb6146c178a57c07f0aea1
+134,bhushan9,1484765370.0,Update Reference papers for personalized news feed,710b16c3a9ffac9fae64809dcdb0c3e69e9c577a
+135,ZacheryThomas,1484765145.0,Update Reference papers for personalized news feed,7a58c3dec35acaf10f6bc3407257300c558a6342
+136,bhushan9,1484764932.0,Create Reference papers for personalized news feed,ff2f8143a104fe2b67f4ece396c66b9d0d7c6b02
+137,rnambis,1484435767.0,Initial commit,0057aaf3a051dc86b4181317ebe3ad9b5989f105
