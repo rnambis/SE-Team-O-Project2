@@ -1,0 +1,242 @@
+commit number,normalized commit number,author,date,normalized date,message,sha
+0,1,Siddharth Sharma,1490551591,1,"Merge pull request #88 from SE17GroupH/sid
+
+Features and bug fixes",f44cb5fc829d594fe0a75eb99ed95a08518b5507
+1,0.994047619,Siddharth Sharma,1490550938,0.9998359528,Remove confirmation mail link code,ec8ac48b97849958d824652356993db94358fdc5
+2,0.9880952381,Siddharth Sharma,1490550634,0.9997595816,Remove code for confirmation mail opening in app,02f2d2c62ca7588de868235c51cf36804ee0c7c9
+3,0.9821428571,Siddharth Sharma,1490550420,0.9997058204,rebuild the project,d1e2c6ebd60087634791eb122b902dda00d16275
+4,0.9761904762,Siddharth Sharma,1490550311,0.9996784373,rebuild the project,b570d907610d30883a9277227405bc4963e807d6
+5,0.9702380952,Siddharth Sharma,1489381068,0.7059401929,"Merge pull request #86 from SE17GroupH/sid
+
+Bug fixes and more Features",4b478c168830529c3f6f23c1810561fb73efe67c
+6,0.9642857143,Siddharth Sharma,1489269941,0.6780227712,add clear instructions,646aea6143770de80a6b591a1daf5e1bb8070e6a
+7,0.9583333333,Siddharth Sharma,1489269277,0.6778559605,add changelog,2b3a82eda8b6e1bfdd6594c2b220dc5dd3c7bd1f
+8,0.9523809524,Siddharth Sharma,1489032801,0.6184482539,Fix lot of bugs. Implement features.,07a6ea12363eea94d7dc3d390e74e1420bd9a6af
+9,0.9464285714,Siddharth Sharma,1489000619,0.6103634638,Update README.md,51ae1ff77ea6f8640d4d86cf906f1ce86e46fcef
+10,0.9404761905,Siddharth Sharma,1488961724,0.6005922281,update readme. remove old keystore,b2c348d40068daac5e496c35d062a33b5a647aed
+11,0.9345238095,Siddharth Sharma,1488961314,0.6004892275,change to optimize,c7259dff76b9ed8c02a70fed6d6a8c16d205d92a
+12,0.9285714286,Siddharth Sharma,1488958676,0.5998265069,Update README.md,548521b3303d5ada252b8034b8687897e2544880
+13,0.9226190476,Siddharth Sharma,1488958641,0.5998177141,Update README.md,7e9cef16f5d1d2369c03d566372d8395a049b8cd
+14,0.9166666667,Siddharth Sharma,1488956407,0.5992564867,Update .travis.yml,95c63f8efe88679afeb00cc8cedc7f9225625322
+15,0.9107142857,Siddharth Sharma,1488956104,0.5991803668,Fix travis to only deploy via master on tag,fbad8032f9d8012fe96b628019cc91ed2f6e38fb
+16,0.9047619048,Siddharth Sharma,1488955027,0.5989098019,Merge branch 'sid',48c402c9bafe9f1ac5edae64f84c55a9ae68c174
+17,0.8988095238,Siddharth Sharma,1488955013,0.5989062848,fix signing apk release to deploy,cf09cc6f1fa74cea40b4a7d57e24fd7e4cee57f2
+18,0.8928571429,Siddharth Sharma,1488948741,0.5973306275,Merge branch 'master' of https://github.com/SE17GroupH/Zap,bc71f583ef4b26e57451541b9742d927f433e337
+19,0.8869047619,Siddharth Sharma,1488948730,0.5973278641,travis deploys signed apk fix,39a325cd1a32a0d6b5e026b855527884ca1464ea
+20,0.880952381,Siddharth Sharma,1488947242,0.5969540474,"Merge pull request #81 from SE17GroupH/sid
+
+Sid",1f12b2e3a5d44c155d0b5901d9923cae709a169c
+21,0.875,Siddharth Sharma,1488946914,0.596871647,Merge branch 'master' into sid,ee827b461522fb9de5568635a3812ad8fbbbd404
+22,0.869047619,Siddharth Sharma,1488946835,0.5968518005,travis deploys signed apk,d9a65e36f6bb3b667a13557b58f432bd7f80324c
+23,0.8630952381,Siddharth Sharma,1488945837,0.5966010821,"Merge pull request #80 from SE17GroupH/sid
+
+Sid",c8457d4d5eea3702eb001f37771c1ac311300db1
+24,0.8571428571,Siddharth Sharma,1488945233,0.5964493447,travis deploys signed apk,8fc70013acd644f1ab3ba6f21b5bfeb9e3839b4e
+25,0.8511904762,Siddharth Sharma,1488944494,0.5962636925,add keystore for releases signed with travis,82d8b7c6335df3b2dc272c35423207057526df6d
+26,0.8452380952,Siddharth Sharma,1488941195,0.5954349148,"Merge pull request #78 from SE17GroupH/sid
+
+Onwards to version 2",c746274803197e932910c619fd68a7d69ab3a78d
+27,0.8392857143,Siddharth Sharma,1488940959,0.5953756267,restrict release deployment to master branch,766e714648e75e7df26a69601f33f938b4f9fd9b
+28,0.8333333333,Siddharth Sharma,1488939755,0.5950731568,fix apk path in travis,d2004253c1274b882c48ee546c286ffb40c90f4f
+29,0.8273809524,Siddharth Sharma,1488939167,0.5949254389,fix apk path in travis,b1c9e04fa0e3b10ef0386c7775bd2a33dfcad982
+30,0.8214285714,Siddharth Sharma,1488938535,0.5947666673,fix apk path in travis,2b5786149d8ddae7d4230e61c45e2d9df1ad5332
+31,0.8154761905,Siddharth Sharma,1488936707,0.5943074356,Merge branch 'master' into sid,69232cf86483311323cb01c266e7f4ab5396a5cd
+32,0.8095238095,Siddharth Sharma,1488935888,0.5941016857,More tests. Add apk deploy from travis,258cbf14296ddd57d51f78a14987dc47cc817f71
+33,0.8035714286,Kaustubh Gondhalekar,1488927440,0.5919793718,added screenshots and minor formatting,444d0fe1168159a5437f2befe397580dc431f1ef
+34,0.7976190476,Kaustubh Gondhalekar,1488926952,0.591856776,"Merge pull request #77 from SE17GroupH/kg
+
+low res screenshots",09bc86633320c437ea1ffde1ee433314c5505351
+35,0.7916666667,KaustubhG,1488926890,0.5918412003,low res screenshots,43a4b4848d6f2422a44bf2111a0eb68ea72f2694
+36,0.7857142857,Kaustubh Gondhalekar,1488926529,0.5917505095,"Merge pull request #76 from SE17GroupH/kg
+
+added screenshots",8f79e4aa87a535d521fa5cb666793953a6bc6f04
+37,0.7797619048,KaustubhG,1488926502,0.5917437266,added screenshots,e9da375f9e6b3b09b82b9ee418a459709015116f
+38,0.7738095238,Kaustubh Gondhalekar,1488925877,0.5915867135,"Merge pull request #75 from SE17GroupH/kg
+
+fix incorrect voice-phrase crash",f300c6df0ef115697e2d9a56ea0395d86cf3daf2
+39,0.7678571429,KaustubhG,1488925364,0.5914578372,fix incorrect voice-phrase crash,6d9d6b5db19e60afd1b33edcfb416ffbaf59b947
+40,0.7619047619,Siddharth Sharma,1488924996,0.5913653879,fix conflicts,79dcb582194b25da1a873384db0b99b868ee0c39
+41,0.755952381,Kaustubh Gondhalekar,1488924954,0.5913548367,"Merge pull request #74 from SE17GroupH/kg
+
+Kg",65310d92ac75a498e82fc28a7bd65407ffec26bf
+42,0.75,Siddharth Sharma,1488924565,0.5912571117,Design and write more tests,6e47dea8a115d57f21adaf90f134dcbcc8d8a5ca
+43,0.744047619,KaustubhG,1488924115,0.5911440624,UI improvements,d3ff25fca53b181828471ee05437883690d655b7
+44,0.7380952381,KaustubhG,1488920745,0.590297448,improving UI,360b3ed0d1bd00cfe78be9a4fa181dc33cf6c5fd
+45,0.7321428571,Kaustubh Gondhalekar,1488917243,0.5894176725,"Merge pull request #73 from SE17GroupH/kg
+
+Kg",b578401336875a5d4ef92734ff56eb261479b450
+46,0.7261904762,KaustubhG,1488916688,0.589278245,another test added,d6ac54960de5db795e9e72538c9097edb3bd19a0
+47,0.7202380952,KaustubhG,1488916383,0.5892016226,basic end-to-end test added,dea5bc8460905d9704f516c21dad77e04e9c4021
+48,0.7142857143,Kaustubh Gondhalekar,1488913404,0.5884532356,"Merge pull request #72 from SE17GroupH/kg
+
+Kg",85e5152cae93bd3a68a3c6ecf3d3e8bb997448ad
+49,0.7083333333,KaustubhG,1488912908,0.5883286301,minor changes,8232be99fbcf1e4691d65f1220c37dea5df84f62
+50,0.7023809524,KaustubhG,1488912651,0.5882640663,refactorings,06d30333df3662500fa0d9e4a43088c70e6171c6
+51,0.6964285714,KaustubhG,1488912356,0.5881899561,added email and password check tests,e402f05d8d10f66cd8bead9e525c4586ff4e125d
+52,0.6904761905,KaustubhG,1488910721,0.58777921,remove apikey toast,01b6d813ba26e9efaf8c3c6d37644569cdbd36c7
+53,0.6845238095,Siddharth Sharma,1488817631,0.5643930592,move to another repo,b250811b79bd45c3b0348523f302e483265be849
+54,0.6785714286,Siddharth Sharma,1488745391,0.5462448635,"Merge pull request #70 from SE17GroupH/sid
+
+Store and use API keys from travis",e14da114faa3907febbb2f35e2264bf278568141
+55,0.6726190476,Siddharth Sharma,1488744813,0.5460996578,Merge branch 'master' into sid,afbe67b22161332f8ecf4736e84b086bf5ffb500
+56,0.6666666667,Siddharth Sharma,1488744781,0.5460916187,modify travis config,90ac1a13197e5963339b2fd6ccf5d39d326a56e0
+57,0.6607142857,Siddharth Sharma,1488741985,0.5453892052,modify to use environment variable,1a09a8bba07560feb0665285270179635730c4ef
+58,0.6547619048,Siddharth Sharma,1488740041,0.5449008318,modify config,a003406d70fa38ee9593eae3f709308948daaaf8
+59,0.6488095238,Siddharth Sharma,1488738807,0.5445908253,modify config,be5818f4161cc206e24c894b13ea6cc493c0bcbe
+60,0.6428571429,Siddharth Sharma,1488738050,0.5444006511,modify config,07160bb4aa9869594a9941aa45ca36cfa3c58f21
+61,0.6369047619,Siddharth Sharma,1488737117,0.544166262,modify config,0c855e1800270c7b2671c7bfc757801b8ec4329a
+62,0.630952381,Siddharth Sharma,1488736538,0.5440208051,modify config,9356eddb8b171c41bab87839a5814315858f8650
+63,0.625,Siddharth Sharma,1488736077,0.5439049923,use subkey.java for keys,5350bfe7fed19b641a4cfe48cc91b1405d1bd660
+64,0.619047619,Siddharth Sharma,1488732397,0.5429804995,"Merge pull request #68 from SE17GroupH/sid
+
+Fix travis build config",c33fc632694bd65b4d16e4494dbfe70d82609bbe
+65,0.6130952381,Siddharth Sharma,1488731860,0.5428455939,fix licenses,7271fc807bdf99d791d9e040d804a87255e8271a
+66,0.6071428571,Siddharth Sharma,1488731501,0.5427554056,add licenses,8711b13cea67039b1f708fa692246d43382d6ddc
+67,0.6011904762,Siddharth Sharma,1488730896,0.542603417,remove emulator,2a70c4fb0694ccf4ae7abb30150d9026d48f2cea
+68,0.5952380952,Siddharth Sharma,1488728105,0.5419022595,fix emulator,ad8497d263d65f3852587754e911f7b30f84204b
+69,0.5892857143,Siddharth Sharma,1488727228,0.5416819388,fix emulator,a8f741fc67125a940c67e2334e6c4b123a29391e
+70,0.5833333333,Siddharth Sharma,1488726540,0.5415090988,fix start emulator,61080235365b8863722e07efaca65c439114f493
+71,0.5773809524,Siddharth Sharma,1488726073,0.5413917787,add commands to start emulator,fb66ad3e4bf2b2777847026c5bcdf1fc5267cb4c
+72,0.5714285714,Siddharth Sharma,1488705318,0.5361776895,remove lint error abort,206201bbcea07530b9af1b4cee89352a497febd0
+73,0.5654761905,Siddharth Sharma,1488704766,0.5360390156,Fix bug wrong resource id,48aa2c98d616993b90cc6d516e066bf16025cf03
+74,0.5595238095,Siddharth Sharma,1488704076,0.5358656732,update to work with api keys as env variables,0eb69e5466ea009447ff78525c1478c16398d6b9
+75,0.5535714286,Siddharth Sharma,1488697618,0.5342432888,update travis config,5600b576c1d6748ffc6c8121d4d279b41216ef2c
+76,0.5476190476,Siddharth Sharma,1488697467,0.5342053545,update travis config,9f9522ce137919ef4424cba546dce006d1fb4c4c
+77,0.5416666667,Siddharth Sharma,1488696528,0.5339694581,update travis config,6b662e82c0da88ab47fb1c7101ec2dd9f930eedc
+78,0.5357142857,Siddharth Sharma,1488695842,0.5337971206,"Merge pull request #67 from SE17GroupH/sid
+
+fix travis config",68d6eaac490960dafc3fb6fcbf2c5be8da209c0b
+79,0.5297619048,Siddharth Sharma,1488695507,0.5337129616,Update README.md,ffbb82a1f9df903780028cf044a0657fea223560
+80,0.5238095238,Siddharth Sharma,1488695115,0.533614483,update sudo to true,fb4fc9d8d2fbc80061ad01f087271049322ec750
+81,0.5178571429,Siddharth Sharma,1488694872,0.5335534363,update sudo requirement,00236a211a4e8b49be927d0194b1aaf013ff9722
+82,0.5119047619,Siddharth Sharma,1488694354,0.5334233039,update java version,1e829a8b9b3c6eee42a57d61fdddb396d94b4d6e
+83,0.505952381,Siddharth Sharma,1488694131,0.5333672816,"Merge pull request #66 from SE17GroupH/sid
+
+Fix bugs, optimize and add config",037902966d3f1e995632d751cbb22d9f7ee8cd40
+84,0.5,Siddharth Sharma,1488693962,0.5333248253,add config file,d011dfb48ae503a908ae8672af229e0dfc49c97d
+85,0.494047619,Siddharth Sharma,1488693939,0.5333190472,add travis config,930b09e5e2e2b37ff1fe414f395cfd060d82bc3c
+86,0.4880952381,Siddharth Sharma,1488693920,0.533314274,Add travis config and license,6d19d2634fe6e7aede017c19fe73a28ea46f2262
+87,0.4821428571,Siddharth Sharma,1488655336,0.523621168,Merge branch 'master' into sid,6972ef77f6cb2990bed16d6b2d3d6c7effff596d
+88,0.4761904762,Siddharth Sharma,1488655259,0.523601824,update gradle and android studio,0519cf877c91cd3d398b4a185126136afa110da7
+89,0.4702380952,Siddharth Sharma,1488335503,0.4432724433,Add February report,199aafb2b3539464574475534dadab63b0a8d554
+90,0.4642857143,Siddharth Sharma,1488139474,0.3940258672,Update README.md,ccde9a0054bd7646a32d0db628cc9236c46eb47e
+91,0.4583333333,Siddharth Sharma,1488139410,0.3940097891,Update README.md,2e10518cda56095720a4b17298100a4da6a85ed9
+92,0.4523809524,Siddharth Sharma,1488139251,0.393969845,Update README.md,28b50eb2b4dfd4cb142c57d386dd9cf2febaf312
+93,0.4464285714,Siddharth Sharma,1488137486,0.3935264401,Update README with more info,a66516af4dd7b180c249273d958cb5b6a3c637f4
+94,0.4404761905,Siddharth Sharma,1488065394,0.3754154251,Some fixes,29c28b6303db57fb21c7a5992fd76fa83155d917
+95,0.4345238095,Siddharth Sharma,1487879642,0.328750646,Resolve conflict,78beab3964112e0aebcb56eee9365947d41a4b41
+96,0.4285714286,Siddharth Sharma,1487879520,0.328719997,change voice enroll to async task,32f4e706bb71b4463230611b9738591a87279428
+97,0.4226190476,Kaustubh Gondhalekar,1487879463,0.3287056774,"Merge pull request #58 from SE17GroupH/kg
+
+seperated register API call from main thread",6eaeb5a11c7555cbb0212e99a4780dffa8c766ab
+98,0.4166666667,KaustubhG,1487879441,0.3287001506,seperated register API call from main thread,a07db9dd20d595f5f6ea4c839148ee810d6741ea
+99,0.4107142857,Kaustubh Gondhalekar,1487878702,0.3285144983,"Merge pull request #57 from SE17GroupH/kg
+
+seperated magic-link email call from main thread",ff8c59df2a459a18bc9f12439f464272230498a2
+100,0.4047619048,KaustubhG,1487878671,0.3285067105,seperated magic-link email call from main thread,f3048081d200098422528df012f8b57ae0ab3505
+101,0.3988095238,Kaustubh Gondhalekar,1487877171,0.3281298792,"Merge pull request #56 from SE17GroupH/kg
+
+default login in background thread",e8153e5e7123cd92e6d02762250be5d94394a27a
+102,0.3928571429,KaustubhG,1487877126,0.3281185742,default login in background thread,eb281b58111e339f7047870059e8e6331912217d
+103,0.3869047619,Kaustubh Gondhalekar,1487875937,0.3278198726,"Merge pull request #55 from SE17GroupH/kg
+
+minor changes",317582bec075811313f7e1180ed60c20fa24604d
+104,0.380952381,KaustubhG,1487875922,0.3278161043,minor changes,55698734e9b73ba52e827f36ca20c5bfc340c69e
+105,0.375,Siddharth Sharma,1487874792,0.3275322247,Merge branch 'master' into sid,4b1c7673783a4db576f84fc893dd69d74ac0327c
+106,0.369047619,Kaustubh Gondhalekar,1487713998,0.2871374161,"Merge pull request #54 from SE17GroupH/kg
+
+put magic-link login API call on background thread",052192dd96f7c2f049d5b774abc7912b7ca01ad7
+107,0.3630952381,KaustubhG,1487713956,0.2871268648,put magic-link login API call on background thread,b5c876edf525e13f5ae9d2f9ac69735e2fefce95
+108,0.3571428571,Siddharth Sharma,1487650703,0.2712363911,Merge branch 'master' into sid,70e348ff68b99de8a560cd847c75f0443d1e21a2
+109,0.3511904762,Kaustubh Gondhalekar,1487646892,0.2702789883,"Merge pull request #53 from SE17GroupH/kg
+
+minor changes",f2d35f1b6d3de15ff09dfdda36016ee551d5c3a6
+110,0.3452380952,KaustubhG,1487646858,0.2702704468,minor changes,4b3e5fcff57b7a91076ac59cca7b2d9a5bc1a0ff
+111,0.3392857143,Siddharth Sharma,1487645416,0.2699081863,Merge branch 'master' into sid,24b8dd0fdf5df33841c7b9bdaadb1a1b516afd60
+112,0.3333333333,Kaustubh Gondhalekar,1487644961,0.2697938808,"Merge pull request #52 from SE17GroupH/kg
+
+Kg",f13a3a567799d3e8025afc66a0354f70be77211d
+113,0.3273809524,KaustubhG,1487644855,0.2697672514,linked api call to login from magic link,8a9733b2ece12a81da0d9948dd3e54ab650d6aed
+114,0.3214285714,KaustubhG,1487643957,0.2695416551,parse auth token from magic-url,d9c0da25ea312e034b933a54ed4fd293045f8695
+115,0.3154761905,Kaustubh Gondhalekar,1487642891,0.2692738536,"Merge pull request #51 from SE17GroupH/kg
+
+Kg",a243e9e6cea7a53a95392106d2d9f7f8feb7184d
+116,0.3095238095,KaustubhG,1487642706,0.2692273777,link magic link to a new activity,f949f5604ea61ae8d47bcf2bb199e8fea01534b8
+117,0.3035714286,KaustubhG,1487641813,0.2690030375,UI mod for homepage,85f7101faf3be47c589c0042b3ad97a3e7c3e9fd
+118,0.2976190476,KaustubhG,1487627257,0.2653462665,permission deny crash fixed,6055b72dedd6e18c32b6802f3997987d05c59bbf
+119,0.2916666667,Siddharth Sharma,1487611885,0.2614844993,"Fix magic link bug, was using wrong url",102f48a35880c89005287f5db19e00785d4868ad
+120,0.2857142857,Siddharth Sharma,1487575726,0.2524006038,Implement magic api call. Remove logout call.,478ad35f3d5fa921dbae0e461d48ae95a3571f26
+121,0.2797619048,Siddharth Sharma,1487458252,0.2228886833,Fix email confirmation error bug,2de68c33ca4df30ba068c8b62fdf6fc914acee88
+122,0.2738095238,Siddharth Sharma,1487457700,0.2227500094,Fix Error of email not confirmed appearing null.,2f8c54d28a61272f3d6a7a0980edb7aaaf88b99a
+123,0.2678571429,Siddharth Sharma,1487455149,0.2221091449,"Merge pull request #49 from SE17GroupH/sid
+
+Sid",70c3c53e1c3bb4ce82172314ef60fa4684e46d2b
+124,0.2619047619,Siddharth Sharma,1487454946,0.2220581471,Add Voice instructions and Improve UI layout.,38c5a174114ba2ef7b9a466c27720ff953aa11d6
+125,0.255952381,Siddharth Sharma,1487453664,0.2217360819,Improve voice login functionality. Bug fixes.,e159855d34d675675da0d4dea3706e95a872a495
+126,0.25,Siddharth Sharma,1487442855,0.2190206355,Big changes. Implement Speaker recognition api calls and functionality. Fix many things.,be5f76e7677d2ff22910312aa2a6f0679b9dbb70
+127,0.244047619,Siddharth Sharma,1487377470,0.2025945589,"Merge pull request #43 from SE17GroupH/sid
+
+Sid",c003233edebb17cac0956fa549f46568ce15023b
+128,0.2380952381,Siddharth Sharma,1487377211,0.2025294927,Merge branch 'master' into sid,e8bbbe3d31e07e3dbaf044c7e286209fcb7e2cea
+129,0.2321428571,Siddharth Sharma,1487376918,0.202455885,Refactor code. Add some UI views,c2cbb6673c54bf3a81a31e82307ccf689cee5152
+130,0.2261904762,Kaustubh Gondhalekar,1487376891,0.202449102,"Merge pull request #42 from SE17GroupH/kg
+
+added voice recording for enrollment and verification",7fbd2a5c4a4cef6212104f60b0a79112f44fe1d5
+131,0.2202380952,KaustubhG,1487375159,0.2020139875,added voice recording for enrollment and verification,9998574defa5c8df9048c0fdad95d786884b9093
+132,0.2142857143,Siddharth Sharma,1487374185,0.2017692983,Move secret keys to SubKey.java and add to gitignore. Resolve merge conflicts,9f42d0b50d0b3b81b22f751630de37fc32563a9e
+133,0.2083333333,Kaustubh Gondhalekar,1487372940,0.2014565284,"Merge pull request #41 from SE17GroupH/kg
+
+added voice recording",8163d48784e11a9d826d9c7c9392dc710a3f5c43
+134,0.2023809524,Siddharth Sharma,1487372936,0.2014555235,ignore SubKey.java that contains api keys to Microsoft Congitive Speaker Recognition service,18ba533767900e7089cdbac060a8759992341acb
+135,0.1964285714,KaustubhG,1487372901,0.2014467307,added voice recording,be5e50ab7ff27d1b7b9bf9cb84065eb0106c1175
+136,0.1904761905,Siddharth Sharma,1487372588,0.2013680986,change gitignore,a7576fab95f72a71ac4b04f4c3397c86931b3104
+137,0.1845238095,Siddharth Sharma,1487371202,0.2010199065,merge master branch. resolve small conflict,467a253e827110e9ccbe133f220b4f302df94b45
+138,0.1785714286,Siddharth Sharma,1487370666,0.2008852521,Commit gitignore,b9a3d6b5b67acd62dc3c4b1cf0ba0a43c6c0ebf7
+139,0.1726190476,Siddharth Sharma,1487370645,0.2008799765,Small changes,52c504479722ec8dc931c7b9d7e941a936ebe44d
+140,0.1666666667,Siddharth Sharma,1487369906,0.2006943242,add small api call,b13ac751e18104cce782037e42e96545196e0dfa
+141,0.1607142857,Kaustubh Gondhalekar,1487367973,0.2002087143,"Merge pull request #40 from SE17GroupH/kg
+
+Kg",52147eec7d48bddfdaa2d4c9429a31ba5b32634b
+142,0.1547619048,KaustubhG,1487367674,0.2001335993,solve merge conflict,08a25944dac25323663de31674d6017c837727b7
+143,0.1488095238,KaustubhG,1487362310,0.1987860505,minor changes,8bc45ba8d1bb4b251f7c898e0e391c8cddfe4f54
+144,0.1428571429,Siddharth Sharma,1487307720,0.1850719032,"Merge pull request #39 from SE17GroupH/sid
+
+Improve a bunch of things",ecf074c36f23bd0e3201271b4d57b8812bc4ac40
+145,0.1369047619,Siddharth Sharma,1487307455,0.1850053297,"Implement logout api call. Save email, password at login. Improve validation at registration.",a28553473170d4cf22054e8215e4cd8558d40b5c
+146,0.130952381,Siddharth Sharma,1487286582,0.1797615964,"Merge pull request #32 from SE17GroupH/sid
+
+Add Registration and Logging plus Fingerprint auth enhancements.",389a5b30523c12a37ea5cb07ea3c2a30c2ad1057
+147,0.125,Siddharth Sharma,1487286428,0.1797229084,"Add validation for email and password. Remove auth mode choosing at register page. Remove logging in from registration page, now redirect to login page.",6f374a669a8ae60b3cfaed859a36991122e3253b
+148,0.119047619,Siddharth Sharma,1487274382,0.1766967018,"After fingerprint auth Redirect to Profile activity. Refactor code, delete unecessary files. Add some resource files",b83f612ced187bba7222dd746cf20d8e450882fb
+149,0.1130952381,Siddharth Sharma,1487268386,0.1751903815,Parse JSON response and display error messages.,1afa74b02b8787b288a146090372a78a4f12c6e5
+150,0.1071428571,KaustubhG,1487206870,0.1597362784,added URL linking skeleton,44e621379e25a3aaee072b6c4214b120647862c5
+151,0.1011904762,Siddharth Sharma,1487146432,0.1445529914,Switch to okHttp library. Working Json response. Create helper class.Clean up code.,c92667b8286bcf3a0dc041a900a0628deb57b53d
+152,0.0952380952,Siddharth Sharma,1487137633,0.142342499,"Add Register functionality to server with error checking. Add Toast notifications, support library for parsing, clean up code.",159bd8cb9478f98b04df51f81dfe37de5d57d9b0
+153,0.0892857143,Siddharth Sharma,1487111618,0.135806988,Add login by entering username and password and indicate if login success or fail,455930e501069ddd76ef5521497db1c40b4781ee
+154,0.0833333333,Siddharth Sharma,1487096724,0.1320653044,"Merge pull request #25 from SE17GroupH/sid
+
+Add local Fingerprint authentication in Android app",b34ccebd98cbb13f9be08a921293a07cd0ee2f5d
+155,0.0773809524,Siddharth Sharma,1487095517,0.1317620808,"Add local Fingerprint auth functionality
+
+Add authentication code to FingerprintAuthActivity, with layout, drawables, and a helper class. Force Close on phones which don't have fingerprint hardware.",f5175d635be4393c875759e87ccb96821a89ecd7
+156,0.0714285714,Siddharth Sharma,1486678907,0.0271009539,Add build dependency for FingerprintAuthHelper. Add fingerpring code to Activity.,4463ea7c91ea45182d1c3ad48c47b10099430f16
+157,0.0654761905,Harold Chen,1486672771,0.0255594626,"Merge pull request #22 from SE17GroupH/devarenacn
+
+Move server project to seperate repo",ee2aeb171c0b919a4610af8047178f25248eb84c
+158,0.0595238095,Harold Chen,1486672729,0.0255489113,Move server project to seperate repo,6c5bf77f6ef67ad4f3a0cac74703951f48de29f4
+159,0.0535714286,Harold Chen,1486661928,0.0228354747,"Merge pull request #20 from SE17GroupH/devarenacn
+
+Basic registration with Devise using RoR",0c487537deb043754632ce2a5e5b5eb6f919f162
+160,0.0476190476,Harold Chen,1486660571,0.022494568,Basic registration with Devise using RoR,3d88e10cb4efb2f951b2af6dbf7aa60453842c54
+161,0.0416666667,Harold Chen,1486659641,0.0222609326,"Merge pull request #19 from SE17GroupH/kg
+
+Merged!",006bebb33e1094a14e866bae9d2d89910b70aa2a
+162,0.0357142857,KaustubhG,1486656765,0.0215384213,created basic app flow,51763c66e266f512255ff07a29c1c28b4b6c9ca3
+163,0.0297619048,KaustubhG,1486652608,0.0204940962,created layouts for basic app-flow,e9fbfa80f070e228fd9967f6a179ca6f53fafa99
+164,0.0238095238,Kaustubh Gondhalekar,1486589307,0.0045915639,"Merge pull request #13 from SE17GroupH/kg
+
+test branch commit",6eee886f7b5d0c86d15732e7fe784381881f7cd5
+165,0.0178571429,KaustubhG,1486589199,0.004564432,test branch commit,ea08beef99e467386021010ccf21ab092b86d7bf
+166,0.0119047619,KaustubhG,1486585917,0.0037399251,base project,378b4e837a7e3c56ee8ce3ac0e13371bf164189a
+167,0.005952381,Harold Chen,1486571620,0.0001482203,Update README.md,5aa08111588d582540130a6f45ed8ce23b29209e
+168,0,Harold Chen,1486571030,0,Initial commit,bd89671496fdc8b9aa586430f768e8bc96f0c31d
