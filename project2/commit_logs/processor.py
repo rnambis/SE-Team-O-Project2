@@ -33,6 +33,15 @@ def line_graph_info(info):
         date.append(float(inf[5]))
     return dayno, date
 
+def pie_sectioner(info):
+    ppl = list(set([inf[0] for inf in info]))
+    count = [0] * len(ppl)
+    for x in ppl:
+        for y in info:
+            if x == y[0]: count[ppl.index(x)] += 1
+    return count, [ 'User '+ str(ppl.index(x)) for x in ppl]
+
+
 def annon(x): return ['o','p','h'].index(x)
 
 def line_graph():
@@ -60,9 +69,33 @@ def line_graph():
     ax.legend()
     plt.show()
 
+
 def histogram():
     f, (p1, p2, p3) = plt.subplots(3, sharex=True)
     p1.set_title('Number of Commits Per Day')
+    for x, c, p in zip(['o','p','h'], ['r', 'b', 'g'], [p1, p2, p3]):
+        with open('team'+x+'_commit_norm.csv') as csvfile:
+            reader = csv.DictReader(csvfile)
+            info = []
+            info2 = []
+            for row in reader:
+                info.append([row['author'], str(int(math.floor(float(row['date'])))/60/60/24), row['message'], row['commit number'], row['normalized commit number'], row['normalized date'], row['author']])
+                first_date = info[-1][1]
+
+            for inf in info:
+                info2.append([inf[0], int(inf[1]) - int(first_date), inf[2], inf[3], inf[4], inf[5], inf[6]])
+
+            max_days = int(info2[0][1])
+            per_day_list = per_day(info2, max_days)
+
+            p.boxplot(per_day_list, 0, c, 0)
+            p.set_ylabel('group ' + str(annon(x)))
+            print annon(x)
+    plt.show()
+
+def pie():
+    f, (p1, p2, p3) = plt.subplots(3)
+    #p1.set_title('Number of Commits Per Day')
     for x, c, p in zip(['o','p','h'], ['r', 'b', 'g'], [p1, p2, p3]):
         with open('team'+x+'_commit_norm.csv') as csvfile:
             reader = csv.DictReader(csvfile)
@@ -75,13 +108,12 @@ def histogram():
             for inf in info:
                 info2.append([inf[0], int(inf[1]) - int(first_date), inf[2], inf[3], inf[4], inf[5]])
 
-            max_days = int(info2[0][1])
-            per_day_list = per_day(info2, max_days)
-
-            p.boxplot(per_day_list, 0, c, 0)
-            p.set_ylabel('group ' + str(annon(x)))
+            sizes, labels = pie_sectioner(info2)
+            p.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+            p.set_title('group ' + str(annon(x)))
             print annon(x)
     plt.show()
 
-line_graph()
+#line_graph()
 #histogram()
+pie()
