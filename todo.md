@@ -8,5 +8,6 @@ What information we need:
 * [ ] number of issues per milestone
 * [ ] time between opening and closing of each issue
 * [ ] time between due date and closing of milestone
+* [ ] issue created and closed by different users
 
 ...
