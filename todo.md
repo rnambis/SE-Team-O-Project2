@@ -10,7 +10,7 @@ What information we need:
 * [ ] time between opening and closing of each issue
 * [ ] time between due date and closing of milestone
 * [ ] issue created and closed by different users
-* [ ] no of commits and no of issue as the deadline apporaches.
+* [ ] no of issue as the deadline apporaches.
 
 
 ...
