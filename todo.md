@@ -2,6 +2,7 @@ What information we need:
 * [x] % of commits per user
 * [x] % of commits per day
 * [x] commits over time graph
+* [x] commits over time vs milestone deadlines
 * [ ] % of issues per user
 * [ ] % of comments on issues per user
 * [ ] % of labels per issue
