@@ -44,6 +44,7 @@ def pie_sectioner(info):
 
 def annon(x): return ['o','p','h'].index(x)
 
+#=(A2 - MIN(A$2:A$1000)) / (MAX(A$2:A$1000) - MIN(A$2:A$1000))
 def line_graph():
     fig  = plt.figure()
     ax = fig.add_subplot(111)
@@ -64,8 +65,36 @@ def line_graph():
             ax.plot(date, dayno, color=c, label=str('group ' + str(annon(x))))
 
     ax.set_title('Normalized Number of Commits vs Time')
-    ax.set_ylabel('Normalized number of commits to Project Completion')
-    ax.set_xlabel('Normalized date to Project Completion')
+    ax.set_ylabel('Normalized Cumulative Number of Commits to Project Completion')
+    ax.set_xlabel('Normalized Time to Project Completion')
+    ax.legend()
+    plt.show()
+
+
+def per_day_line():
+    fig  = plt.figure()
+    ax = fig.add_subplot(111)
+    for x, c in zip(['o','p','h'], ['r', 'b', 'g']):
+        with open('team'+x+'_commit_norm.csv') as csvfile:
+            print x
+            reader = csv.DictReader(csvfile)
+            info = []
+            info2 = []
+            for row in reader:
+                info.append([row['author'], str(int(math.floor(float(row['date'])))/60/60/24), row['message'], row['commit number'], row['normalized commit number'], row['normalized date'], row['author']])
+                first_date = info[-1][1]
+
+            for inf in info:
+                info2.append([inf[0], int(inf[1]) - int(first_date), inf[2], inf[3], inf[4], inf[5], inf[6]])
+
+            max_days = int(info2[0][1])
+            per_day_list = per_day(info2, max_days)
+
+            ax.plot(per_day_list, color=c, label=str('group ' + str(annon(x))))
+
+    ax.set_title('Number of Commits each Day vs Time')
+    ax.set_ylabel('Number of Commits')
+    ax.set_xlabel('Normalized Time to Project Completion')
     ax.legend()
     plt.show()
 
@@ -111,9 +140,9 @@ def pie():
             sizes, labels = pie_sectioner(info2)
             p.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
             p.set_title('group ' + str(annon(x)))
-            print annon(x)
     plt.show()
 
-#line_graph()
+#per_day_line()
+line_graph()
 #histogram()
-pie()
+#pie()
