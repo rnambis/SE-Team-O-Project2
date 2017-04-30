@@ -1,7 +1,7 @@
 import sqlite3
 import matplotlib.pyplot as plt
 
-def percent_issues_user(conn):
+def percent_issues_user(conn,name):
 	cur = conn.cursor()
 	# Getting the usser list
 	cur.execute('select distinct(user) from event')
@@ -14,17 +14,21 @@ def percent_issues_user(conn):
 		issues.append(res[0])
 	total = sum(issues)
 	issues = [float(issue)/float(total) * 100 for issue in issues]
-	print issues
+	#print issues
 	sizes = issues
 	colors = ['gold', 'yellowgreen', 'lightcoral', 'lightskyblue']
 	plt.pie(sizes, labels=users, colors=colors,
         autopct='%1.1f%%', shadow=True, startangle=140)
 	plt.axis('equal')
+	plt.savefig(name+'_issues_per_user')
 	plt.show()
+	
 def main():
 	group1 = sqlite3.connect('group1.db')
-	percent_issues_user(group1)
-
-
+	percent_issues_user(group1, 'group1')
+	group2 = sqlite3.connect('group2.db')
+	percent_issues_user(group2,'group2')
+	group3 = sqlite3.connect('group3.db')
+	percent_issues_user(group3,'group3')
 if __name__ == "__main__":
 	main()
