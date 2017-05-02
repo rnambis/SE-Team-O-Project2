@@ -67,8 +67,8 @@ def comments_per_user(conn, name):
 		#print issues_total
 		#print "hello"
 		temp = [float(x)+j for x in issues_total]		
-		ax.bar(temp, y, width = 0.2, color = color[k], align = 'center', label = str(user))
-		j+=0.2
+		ax.bar(temp, y, width = 0.4, color = color[k], align = 'center', label = str(user))
+		j+=0.4
 		#plt.plot(issues_total, y, color = color[k])
 		k+=1
 	ax.set_ylabel('No of comments')
@@ -76,14 +76,15 @@ def comments_per_user(conn, name):
 	ax.set_title('No of comments per issue per user')
 	ax.legend(loc='upper left')
 	plt.show()
+	plt.savefig(name+'no_comments_per_user')
 	
 def main():
 	group1 = sqlite3.connect('group1.db')
 	#percent_issues_user(group1, 'group1')
-	
+	comments_per_user(group1,'group1')
 	group2 = sqlite3.connect('group2.db')
 	#percent_issues_user(group2,'group2')
-
+	comments_per_user(group2,'group2')
 	group3 = sqlite3.connect('group3.db')
 	#percent_issues_user(group3,'group3')
 	comments_per_user(group3,'group3')
