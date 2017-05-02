@@ -4,7 +4,7 @@ What information we need:
 * [x] commits over time graph
 * [x] commits over time vs milestone deadlines
 * [x] % of issues per user
-* [ ] % of comments on issues per user
+* [x] % of comments on issues per user
 * [x] % of labels per issue
 * [ ] number of issues per milestone
 * [x] time between opening and closing of each issue
